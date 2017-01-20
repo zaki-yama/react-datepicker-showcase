@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -p 6006",
+    "start": "npm run storybook",
+    "storybook": "start-storybook -p 6006 -s salesforce-lightning-design-system-2.2.1",
     "build-storybook": "build-storybook"
   },
   "keywords": [],
@@ -13,7 +14,8 @@
   "license": "ISC",
   "dependencies": {
     "react": "^15.3.2",
-    "react-dom": "^15.3.2"
+    "react-dom": "^15.3.2",
+    "react-lightning-design-system": "^2.2.3"
   },
   "devDependencies": {
     "@kadira/storybook": "^2.21.0"
