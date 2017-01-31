@@ -7,7 +7,7 @@ import MyDatepicker from '../../components/react-lightning-design-system/MyDatep
 // moment.locale('ja');
 // console.log(moment.locale());
 
-storiesOf('react-lightning-design-system', module)
+storiesOf('react-lightning-design-system:Datepicker', module)
   .add('default', () => {
     return (
       <MyDatepicker onSelectDate={action('onSelectDate')} />
@@ -23,7 +23,6 @@ storiesOf('react-lightning-design-system', module)
   })
   .add('change locale', () => {
     moment.locale('ja');
-    console.log(moment.monthsShort());
     return (
       <MyDatepicker
         onSelectDate={action('onSelectDate')}
