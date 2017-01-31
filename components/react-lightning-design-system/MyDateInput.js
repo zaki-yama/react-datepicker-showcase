@@ -13,7 +13,7 @@ export default class MyDateInput extends React.Component {
     super(props);
 
     this.state = {
-      value: React.PropTypes.string,
+      value: this.props.value,
     };
   }
 
