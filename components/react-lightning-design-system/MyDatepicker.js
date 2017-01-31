@@ -3,7 +3,14 @@ import moment from 'moment';
 
 import { Datepicker } from 'react-lightning-design-system';
 
-class ReactLDSDatepicker extends React.Component {
+class MyDatepicker extends React.Component {
+  static get propTypes() {
+    return {
+      selectedDate: PropTypes.string,
+      onSelectDate: PropTypes.func.isRequired,
+    };
+  }
+
   constructor(props) {
     super(props);
     this.state = {
@@ -28,9 +35,4 @@ class ReactLDSDatepicker extends React.Component {
   }
 }
 
-ReactLDSDatepicker.propTypes = {
-  selectedDate: PropTypes.string,
-  onSelectDate: PropTypes.func.isRequired,
-};
-
-export default ReactLDSDatepicker;
+export default MyDatepicker;
